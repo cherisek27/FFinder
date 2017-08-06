@@ -162,7 +162,7 @@
 
 		<footer class="footer"> 
 			<div class="container">
-				<p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/cherisek27/friendfinder">GitHub Repo</a></p>
+				<p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/cherisek27/FriendFinder">GitHub Repo</a></p>
 			</div>  
 		</footer>
 	</div>
@@ -190,8 +190,7 @@
 	</div>
 
   <script type="text/javascript">
-
-
+	// Chosen CSS
     var config = {
       '.chosen-select'           : {},
       '.chosen-select-deselect'  : {allow_single_deselect:true},
@@ -203,10 +202,10 @@
       $(selector).chosen(config[selector]);
     }
 
- 
+    // Capture the form inputs 
     $("#submit").on("click", function(){
 
-
+    	// Form validation
     	function validateForm() {
 		  var isValid = true;
 		  $('.form-control').each(function() {
@@ -233,16 +232,17 @@
 	    	}
 
 
+	    	// Grab the URL of the website
 	    	var currentURL = window.location.origin;
 
+	    	// AJAX post the data to the friends API. 
+	    	$.post(currentURL + "/api/friends", userData, function(data) {
 
-	    	$.post(currentURL + "/api/friends", userData, function(data){
-
-	
+	    		// Grab the result from the AJAX post so that the best match's name and photo are displayed.
 	    		$("#matchName").text(data.name);
 	    		$('#matchImg').attr("src", data.photo);
 
-	
+		    	// Show the modal with the best match 
 		    	$("#resultsModal").modal('toggle');
 
 	    	});
@@ -254,8 +254,6 @@
     	
     	return false;
     });
-
-
   </script>
 
 </body>

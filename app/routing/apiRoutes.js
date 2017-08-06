@@ -4,11 +4,11 @@ var path = require("path");
 var totalDifference = 0; 
 
 module.exports = function(app) {
-	app.get("/api/friends.js", function(req, res) {
+	app.get("/api/friends", function(req, res) {
 		res.json(friends);
 	}); 
 
-	app.post("/api/friends", function(req,res) {
+	app.post("/api/friends", function(req, res) {
 
 		var perfectMatch = {
 			name: "", 
@@ -23,15 +23,15 @@ module.exports = function(app) {
 
 		var totalDifference = 0;  
 
-		for (var i = 0; i < [friends].length-1; i++) {
+		for(var i = 0; i < [friends].length-1; i++) {
 			console.log(friends[i].name);
 			totalDifference = 0; 
 
-			for (var j = 0; j < 10; j++) {
+			for(var j = 0; j < 10; j++) {
 				totalDifference += Math.abs(parseInt(userScores[j]) - 
 					parseInt(friends[i].scores[j])); 
 
-				if (totalDifference <= perfectMatch.friendDifferentce) {
+				if (totalDifference <= perfectMatch.friendDifference) {
 					perfectMatch.name = friends[i].name; 
 					perfectMatch.photo = friends[i].photo; 
 					perfectMatch.matchDifference = totalDifference;
