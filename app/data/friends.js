@@ -1,8 +1,7 @@
-var friends = [
- {
-  "name":"Brian", 
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[ 
+var friends = [{
+  "name": "Brian", 
+  "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores": [ 
     5,
     1,
     4,
@@ -14,13 +13,28 @@ var friends = [
     4,
     1
   ]
-  }, 
-
+}, 
  { 
-  "name":"Isabella", 
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[ 
+  "name": "Isabella", 
+  "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores": [ 
     5,
+    1,
+    4,
+    4,
+    5,
+    1,
+    2,
+    5,
+    4,
+    1
+  ]
+ },  
+  { 
+  "name": "Owen", 
+  "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores": [ 
+    2,
     1,
     4,
     4,
@@ -34,139 +48,121 @@ var friends = [
  },  
 
   { 
-  "name":"Owen", 
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[ 
-    9,
-    1,
-    4,
-    4,
-    5,
-    1,
-    2,
-    5,
-    4,
-    1
-  ]
- },  
-
-  { 
-  "name":"Amanda", 
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[ 
-    5,
+  "name": "Amanda", 
+  "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores": [ 
+    3,
     1,
     4,
     3,
     2,
-    6,
-    9,
-    8,
-    9,
-    9
+    5,
+    2,
+    1,
+    2,
+    2
   ]
  }, 
  
   { 
-  "name":"David", 
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[ 
+  "name": "David", 
+  "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores": [ 
     5,
     1,
     4,
     3,
     2,
-    6,
-    9,
-    8,
-    9,
-    9
+    3,
+    4,
+    1,
+    2,
+    1
   ]
  },  
 
   { 
-  "name":"Stacy", 
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[ 
+  "name": "Stacy", 
+  "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores": [ 
     5,
     1,
     4,
     3,
     2,
-    6,
-    9,
-    8,
-    9,
-    9
+    5,
+    4,
+    1,
+    2,
+    3
   ]
  }, 
 
   { 
-  "name":"John", 
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[ 
+  "name": "John", 
+  "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores": [ 
      5,
      1,
      4,
      3,
      2,
-     6,
-     9,
-     8,
-     9,
-     9
+     1,
+     2,
+     3,
+     3,
+     5
   ]
  },  
 
    { 
-  "name":"Susan", 
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[ 
+  "name": "Susan", 
+  "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores": [ 
      5,
      1,
      4,
      3,
+     1,
      2,
-     6,
-     9,
-     8,
-     9,
-     9
+     3,
+     4,
+     4,
+     4
   ]
  },  
 
    { 
-  "name":"Michael", 
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[ 
+  "name": "Michael", 
+  "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores": [ 
      5,
      1,
      4,
      3,
      2,
-     6,
-     9,
-     8,
-     9,
-     9
+     4,
+     3,
+     2,
+     2,
+     1
   ]
  },  
    { 
-  "name":"Melissa", 
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[ 
+  "name": "Melissa", 
+  "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores": [ 
      5,
-     1,
+     4,
      4,
      3,
      2,
-     6,
-     9,
-     8,
-     9,
-     9
+     1,
+     2,
+     2,
+     2,
+     2
   ]
- } 
-] 
+ }]; 
 
 module.exports = friends;
